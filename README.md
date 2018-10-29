@@ -17,7 +17,7 @@ Hopefully someone else will get some use for things I've developed over the year
 | 4 | oem_unlock--usb_debugging    | A Tutorial For Enable OEM-Unlock and USB-Debugging, required for some of my scripts     | No | No | Yes
 | 5 | various/w-grepalldbs.sh | Run this script and you will download * database files from your device.                     | No | No | No
 
-### 1) huawei/root-huawei-dialog-method.sh
+### 1) huawei/w-p8root.sh
 
 ![Screenshot](_images_and_videos/w-p8root.gif)
 

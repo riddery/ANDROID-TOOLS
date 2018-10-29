@@ -1,6 +1,33 @@
 #!/bin/bash
-# Root huawei p8 lite with stockrom - Fast method in a dialog interface
-# Enable usb debugging. 
+##################################################################################
+##### GREETINGS ##################################################################
+##################################################################################
+####                                                                          ####
+#### To all developers that contributes to all kind of open source projects   ####
+#### Keep up the good work!                                                   #<3#
+####                                                                          ####
+#### https://sendit.nu & https://github.com/wuseman                           ####
+####                                                                          ####
+##################################################################################
+#### DESCRIPTION #################################################################
+##################################################################################
+####                                                                          ####
+####  Root huawei p8 lite with stockrom - Fast method in a dialog interface   ####
+####  Enable usb debugging.                                                   ####
+####                                                                          ####  
+#### Enjoy another awesome 'bash' script from wuseman. Questions? Conact me!  ####
+####                                                                          ####
+##################################################################################
+#### Begin of code  ##############################################################
+##################################################################################
+
+
+##################################################################################
+# USER SETTINGS - EDIT THIS AFTER YOUR NEEDS                                     #
+##################################################################################
+twrp-image="recovery.img"
+magisk_zip="magisk.zip"
+magisk_apk="magisk.apk"
 
 dialog --backtitle "This Tool Will Root All Honor P8 Lite Models Stock Rom In 1 Minute Or Lesss - Developer: wuseman - Contact: info@wuseman.com" --title "Reboot Device" --clear \
 --yesno "If you have enabled usb-debugging then you are ready to flash your Huawei Honor P8 Lite - Please press YES if your phone is connected and usb debuggig has been enabled:" 10 70
@@ -24,7 +51,7 @@ esac
 
 
 dialog --backtitle "This Tool Will Root All Honor P8 Lite Models Stock Rom In 1 Minute Or Lesss - Developer: wuseman - Contact: info@wuseman.com" --title "Flash Ramdisk" \
---yesno "Are you REALLY sure you want to flash ramdisk with w-twrp-recovery.img?" 10 70
+--yesno "Are you REALLY sure you want to flash ramdisk with $twrp/image?" 10 70
 response=$?
 case $response in
    0)
@@ -87,7 +114,7 @@ case $response in
       echo "19" | dialog --backtitle "This Tool Will Root All Honor P8 Lite Models Stock Rom In 1 Minute Or Lesss - Developer: wuseman - Contact: info@wuseman.com" --title "Flash In Progress" --gauge "Flashing device with magisk..." 10 70; sleep 1
       echo "31" | dialog --backtitle "This Tool Will Root All Honor P8 Lite Models Stock Rom In 1 Minute Or Lesss - Developer: wuseman - Contact: info@wuseman.com" --title "Flash In Progress" --gauge "Flashing device with magisk...." 10 70; sleep 1
       echo "34" | dialog --backtitle "This Tool Will Root All Honor P8 Lite Models Stock Rom In 1 Minute Or Lesss - Developer: wuseman - Contact: info@wuseman.com" --title "Flash In Progress" --gauge "Flashing device with magisk....." 10 70; sleep 1
-      adb sideload magisk.zip &> /dev/null
+      adb sideload $magisk_zip &> /dev/null
       echo "71" | dialog --backtitle "This Tool Will Root All Honor P8 Lite Models Stock Rom In 1 Minute Or Lesss - Developer: wuseman - Contact: info@wuseman.com" --title "Flash In Progress" --gauge "Flashing device with magisk........" 10 70; sleep 1
       echo "98" | dialog --backtitle "This Tool Will Root All Honor P8 Lite Models Stock Rom In 1 Minute Or Lesss - Developer: wuseman - Contact: info@wuseman.com" --title "Flash In Progress" --gauge "Flashing device with magisk........." 10 70; sleep 1
       echo "100" | dialog --backtitle "This Tool Will Root All Honor P8 Lite Models Stock Rom In 1 Minute Or Lesss - Developer: wuseman - Contact: info@wuseman.com" --title "Flash In Progress" --gauge "Successfully Flashed Device........" 10 70; sleep 1

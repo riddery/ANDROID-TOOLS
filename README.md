@@ -11,14 +11,23 @@ Hopefully someone else will get some use for things I've developed over the year
 
 | NR | Sections | Description | Root Required | Risks For Bricking Device | May Void Warrany
 | --- | --- | --- | --- | --- | --- |
-| 1 | various/w-grepalldbs.sh | Run this script and you will download * database files from your device.                           | No | No | No
-| 2 | huawei/root-huawei-honor-p8-lite.sh | Root your huawei p8 lite device in 3 minutes or even less                     | No | Yes | Yes
-| 3 | huawei/huawei-bootloader-unlock.sh | A Tool For Hacking & Unlocking Your Huawei Device Locked Bootloader            | No  | No | Yes
-| 4 | oem_unlock--usb_debugging    | A Tutorial For Enable OEM-Unlock and USB-Debugging, required for some of my scripts  | No | No | Yes
+| 1 | huawei/w-p8root.sh | Root your huawei p8 lite device in 1 minutes or even less in a dialog interface  | No | Yes | Yes
+| 2 | huawei/root-huawei-honor-p8-lite.sh | Root your huawei p8 lite device in 3 minutes or even less                        | No | Yes | Yes
+| 3 | huawei/huawei-bootloader-unlock.sh | A Tool For Hacking & Unlocking Your Huawei Device Locked Bootloader               | No  | No | Yes
+| 4 | oem_unlock--usb_debugging    | A Tutorial For Enable OEM-Unlock and USB-Debugging, required for some of my scripts     | No | No | Yes
+| 5 | various/w-grepalldbs.sh | Run this script and you will download * database files from your device.                     | No | No | No
 
+### 1) huawei/root-huawei-dialog-method.sh
 
+![Screenshot](_images_and_videos/w-p8root.gif)
 
+##### Dialog package is required for this method:
 
+```ruby
+     wget -O https://raw.githubusercontent.com/wuseman/ADB-SCRIPTS/huawei/master/w-p8root.sh
+     chmod +x ./w-p8root.sh
+     sh ./w-p8root.sh
+```
 
 ### 2) huawei/root-huawei-honor-p8-lite.sh
 

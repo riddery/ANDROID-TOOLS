@@ -6,6 +6,19 @@ something if you are unsure of anything at all. Also other scripts and tools wil
 
 Hopefully someone else will get some use for things I've developed over the years and still developing to share my knowledge. 
 
+##### Tired on wait on eRecovery all the time? This is the way you will get the source to download them at max speed from your PC:
+
+    -------------------------------------------
+    ### GET FIRMWARE URLS
+    -------------------------------------------
+    # Start erecovery, let the firmware download until atleast 5% then hard reboot it with powerbutton
+    # and join twrp mode and from pc type adb shell
+    # now we need to use strings..
+    ~ # strings data/update/download_state | grep http
+    http://update.dbankcdn.com/TDS/data/files/p3/s15/G2312/g1699/v169547/f1/full/update.zip
+    http://update.dbankcdn.com/TDS/data/files/p3/s15/G2312/g1699/v169547/f1/full/public/update_data_full_public.zip
+    http://update.dbankcdn.com/TDS/data/files/p3/s15/G2312/g1699/v169547/f1/full/PRA-L31HN_hw_eu/update_full_PRA-L31HN_hw_eu.zip
+
 
 ### INFO 
 
